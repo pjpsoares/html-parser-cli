@@ -1,0 +1,31 @@
+{
+  "name": "html-parser-cli",
+  "version": "1.0.0",
+  "description": "A tool that will give some statistics refering to the ammount of tags exist on a given html.",
+  "main": "index.js",
+  "scripts": {
+    "lint": "eslint src/ test/",
+    "test": "mocha \"test/**/*.spec.js\"",
+    "test-watch": "mocha \"test/**/*.spec.js\" -w"
+  },
+  "keywords": [
+    "html",
+    "parser",
+    "es6"
+  ],
+  "author": "Paulo Soares",
+  "license": "ISC",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.13.1",
+    "eslint-config-google": "^0.7.1",
+    "mocha": "^3.2.0"
+  },
+  "bin": {
+    "parse-html": "./bin/parse-html.js"
+  },
+  "dependencies": {
+    "cheerio": "^0.22.0",
+    "lodash": "^4.17.4"
+  }
+}
